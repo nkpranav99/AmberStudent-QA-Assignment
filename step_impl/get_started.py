@@ -147,6 +147,11 @@ def switch_window_handle():
 
 @step("Sign in using Google")
 def google_sign_in():
+   time.sleep(5)
+   window_handles = driver.window_handles
+
+   new_window = window_handles[-1]
+   driver.switch_to.window(new_window)
    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[@id='mantine-cae72ecah-body']//div[3]/div")))
   #  driver.switch_to_frame(iframe)
    time.sleep(5)

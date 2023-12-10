@@ -3,7 +3,7 @@ import csv
 locators = {}
 
 def read_data_from_csv():
-    with open("D:/100DaysCoding/AmberStudent/QA-Assessment/resources/locators.csv", mode='r') as file:
+    with open("D:/100DaysCoding/AmberStudent/QA-Assessment/AmberStudent-QA-Assignment/resources/locators.csv", mode='r') as file:
         # locators = {}
         reader = csv.DictReader(file)
         for row in reader:
@@ -11,7 +11,7 @@ def read_data_from_csv():
     return locators
 
 def read_user_credentials_from_csv():
-    with open("D:/100DaysCoding/AmberStudent/QA-Assessment/resources/user.csv", mode='r') as file:
+    with open("D:/100DaysCoding/AmberStudent/QA-Assessment/AmberStudent-QA-Assignment/resources/user.csv", mode='r') as file:
         reader = csv.DictReader(file)
 
         for row in reader:

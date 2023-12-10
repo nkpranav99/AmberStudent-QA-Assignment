@@ -23,9 +23,3 @@
 * Click on "searchbox" in the webpage
 * Wait for "5" seconds
 * Iterate over the Countries and validate the Popular Cities are not repeated for any
-
-## Task 3
-
-* Click on "Login" in the webpage
-* Wait for "5" seconds
-* Sign in using Google

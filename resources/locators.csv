@@ -5,6 +5,7 @@ input_box,xpath,//*[@id="main-search"]
 More Filters,xpath,//span[contains(text(); "More Filters")]
 Filter Page Overlay,xpath,//div[contains(@role; "dialog") and @class = "amber-Paper-root amber-Modal-modal amber-1vawpyp"]
 Filters Page,xpath,//*[@id="mantine-4shs17kk7"]/div[2]/div
+north_lodge_wishlist,xpath,(//button[@aria-label='shortlist'])[2]
 Private Room,xpath,//input[contains(@value; "private_room")]
 Private Bathroom,xpath,//input[contains(@value; "private_bathroom")]
 Show Results,xpath,//span[contains(text(); 'Show ')]
