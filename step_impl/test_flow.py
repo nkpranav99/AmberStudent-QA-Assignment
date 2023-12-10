@@ -28,7 +28,6 @@ def close():
 
 def find_element_by_element_name(locator_name):
   locator = read_data_from_csv().get(locator_name)
-  # print(locator)
 
   ## Other locator types can be added here
   if locator['type'] == 'xpath':
@@ -43,10 +42,7 @@ def find_element_by_element_name(locator_name):
 
 @step("Scroll to <element> in page")
 def scroll_to_element(element):
-  #  driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
-
    target_element = find_element_by_element_name(element)
-  #  WebDriverWait(driver,10).until(EC.presence_of_element_located(target_element))
 
    driver.execute_script('arguments[0].scrollIntoView(true);', target_element)
 
@@ -87,7 +83,6 @@ def wait_until_element_is_visible(element):
 @step("Click on checkbox for <room_type>")
 def click_on_checkbox(room_type):
   try:
-    checkbox = find_element_by_element_name(room_type)
     scroll_to_element(room_type)
     find_element_by_element_name(room_type).click()
   except:
@@ -98,10 +93,6 @@ def checkbox_status(room_type):
    checkbox = find_element_by_element_name(room_type)
    driver.execute_script('arguments[0].scrollIntoView(true);', checkbox)
    assert checkbox.is_selected(), "The {0} checkbox is not checked!".format(room_type)
-      
-@step("Open <result> in a new tab")
-def open_results_in_new_tab(result):
-   AC(driver).key_down(Keys.CONTROL).click(result).key_up(Keys.CONTROL).perform
 
 @step("Verify <details> of the property is <value>")
 def verify_details_of_property(details, value):
