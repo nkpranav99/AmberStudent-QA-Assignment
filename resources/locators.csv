@@ -1,0 +1,21 @@
+element,locator,locator-value
+searchbox,xpath,//*[@id="section-featured"]//div[2]/div
+input_box,xpath,//*[@id="main-search"]
+
+More Filters,xpath,//span[contains(text(); "More Filters")]
+Filter Page Overlay,xpath,//div[contains(@role; "dialog") and @class = "amber-Paper-root amber-Modal-modal amber-1vawpyp"]
+Filters Page,xpath,//*[@id="mantine-4shs17kk7"]/div[2]/div
+Private Room,xpath,//input[contains(@value; "private_room")]
+Private Bathroom,xpath,//input[contains(@value; "private_bathroom")]
+Show Results,xpath,//span[contains(text(); 'Show ')]
+
+second-search-result,xpath,//div//h2[contains(text(); "North Lodge; London")]
+property_details,xpath,//*[@id="show-container"]/div[4]/div[1]/div/div[1]/div[1]/div[2]/div[2]
+title,xpath,//h1[contains(text(); 'North Lodge; London')]
+location,xpath,//div[contains(text(); "Lebus St; London; N17 9FQ; United Kingdom")]
+
+Login,xpath,//span[contains(text(); 'Login')]
+Login_SignUp_window,xpath,//div[contains(text(); "Log in or sign up")]
+Google_iframe,xpath,//*[@id="gsi_532143_757682"]
+Google_Sign_in_button,xpath,//*[@id="mantine-cae72ecah-body"]//div[3]/div
+Google_sign_in_email,xpath,//input[@id='identifierId']

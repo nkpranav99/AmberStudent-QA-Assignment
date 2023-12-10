@@ -1,0 +1,14 @@
+{
+    "input_box": {
+        "type": "xpath",
+        "value": "//*[@id='main-search']"
+    },
+    "Filters": {
+        "type": "xpath",
+        "value": "//*[@id='search-container']//div[3]/button"
+    },
+    "searchbox": {
+        "type": "xpath",
+        "value": "//*[@id='section-featured']//div[2]/div"
+    }
+}
